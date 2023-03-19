@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // let number = 5;
 // const leftBorderWidth = 1;
 
@@ -65,10 +66,31 @@
 // prompt("Вам есть 18?")
 
 
-const answers = [];
 
-answers[0] = prompt('Вы готовы?', '');
-answers[1] = prompt('Старт?', '');
-answers[2] = prompt('Начать', '');
+const numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?", " ");
 
-document.write(answers);
+const personalMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat:false
+};
+
+const 
+	lastViewedFilm = prompt("Один из последних просмотренных фильмов?", " "),
+	gradeFilm = prompt("На сколько оцените его?", ""),
+	lastViewFilm = prompt("Один из последних просмотренных фильмов?", " "),
+	ratingFilm = prompt("На сколько оцените его?", "");
+
+personalMovieDB.movies[lastViewedFilm] = gradeFilm;
+personalMovieDB.movies[lastViewFilm] = ratingFilm;
+
+console.log(personalMovieDB);
+    
+      
+
+      
+
+
+
